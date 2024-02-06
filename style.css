@@ -1,0 +1,175 @@
+
+
+.masthead{
+    background-size: cover;
+    min-height: 70vh;
+    position: relative;
+    padding-top: 100px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+@media (max-width: 768px) {
+    .masthead {
+        min-height: 80vh;
+    }
+}
+@media (max-width: 758px) {
+    .masthead {
+        min-height: 30vh;
+    }
+}
+@media (max-width: 1442px) {
+    .masthead {
+        min-height: 50vh;
+    }
+}
+@media (max-width: 640px) {
+    .masthead {
+        min-height: 40vh;
+    }
+}
+.redbox {
+    position: relative;
+    height: 60vh; 
+    width: 90%; 
+    max-width: 1000px; 
+    margin: auto; 
+    text-align: center; 
+    background-image: url('cmihgh.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.redbox img {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.cla {
+    color: rgb(245, 237, 237); 
+    font-size: 24px; 
+}
+
+
+.flx{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.flx {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.flx img {
+    max-width: 100%; /* Ensure images don't exceed their container width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+/* Style each image individually */
+.flx img:nth-child(1) {
+    margin-right: 10px; /* Add margin to separate from the next image */
+}
+
+.flx img:nth-child(2) {
+    margin: 0 10px; /* Add margin on both sides to separate from neighboring images */
+}
+
+.flx img:nth-child(3) {
+    margin-left: 10px; /* Add margin to separate from the previous image */
+}
+
+@media (max-width: 768px) {
+    .flx {
+        flex-direction: column; /* Stack images vertically on small screens */
+        align-items: center; /* Center-align images */
+        padding-top: 50px; /* Adjust padding for smaller spacing */
+        padding-bottom: 50px; /* Adjust padding for smaller spacing */
+    }
+
+    .flx img {
+        margin: 10px 0; /* Add margin above and below each image for separation */
+        border: 2px solid #333; /* Add border to each image */
+        border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add box-shadow for depth */
+    }
+}
+
+
+.bgcolorr{
+    background-color: darkslategrey;
+
+}
+
+.bgcolorr p{
+
+color: aqua;
+}
+
+
+.image-container {
+    max-width: 200%;
+    display: flex;
+    overflow: hidden; /* Hide overflowing images */
+    animation: slideIn 10s infinite ease-in-out; /* Apply animation */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    50% {
+        transform: translateX(-30%); /* End position */
+    }
+}
+
+.image {
+    max-width: 100%;
+    max-height: 100%; /* Ensure images don't exceed container height */
+    flex: 0 0 auto;
+    margin: 0; /* Remove default margin */
+    width: auto; /* Ensure images scale proportionally */
+    height: auto; /* Ensure images scale proportionally */
+}
+
+
+@media (min-width: 6px) { 
+    .image {
+        max-width: 200px; 
+        min-height: 200px;
+    }
+}
+@media (min-width: 640px) { /* Adjust for small screens */
+    .image {
+        max-width: 50%; /* 2 images per row */
+        flex-basis: 50%; /* Adjust the initial size of each image */
+    }
+}
+
+@media (min-width: 768px) { /* Adjust for devices larger than iPad Mini */
+    .image {
+        max-width: 50%; /* 2 images per row */
+        flex-basis: 50%; /* Adjust the initial size of each image */
+    }
+}
+
+
+@media (min-width: 1024px) { /* Adjust for large screens */
+    .image {
+        max-width: 200px /* 4 images per row */
+    }
+}
+
+
